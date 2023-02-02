@@ -12,17 +12,22 @@ function App() {
   return (
     <div className="App">
       <section className="App-content">
-      
-      <Link to='/'>Isaias Romano App</Link>
+      <header className='header'>
+
+      <Link to='/'>IRomano App</Link>
+      <h3>La app de gif mas grande de pais</h3>
+      </header>
     
+      <section className='section-listado-gif'>
+      <Route
+        component={ListOfGif}
+        path="/search/:busqueda"
+      />
+      </section>
       <Route 
         component={Home}
         path="/"
       />
-        <Route
-          component={ListOfGif}
-          path="/search/:busqueda"
-        />
         
 
       </section>

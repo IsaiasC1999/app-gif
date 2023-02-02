@@ -1,12 +1,16 @@
 const Gif = ({ url, title, id }) => {
 
     return (
-
+      <div>
         <a className="gif" href={`#${id}`}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <br /><small>{id}</small>
-            <img src={url} alt="gif1" />
+            <div className="contenedor-img">
+              <img src={url} alt="gif1" />
+
+            </div>
         </a>
+      </div>
     );
 
 }

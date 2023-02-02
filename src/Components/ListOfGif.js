@@ -1,19 +1,12 @@
 import Gif from "./Gif";
-import React, { useEffect, useState } from "react";
-import getGifs from '../services/getGifs';
+import React from "react";
+import useGif from "../Hooks/useGif";
 
 export default function ListOfGif({ params }) {
-    const [gifs, setGifs] = useState([]);
-
-    const { busqueda } = params
-
-
-    useEffect(() => {
-        getGifs({ busqueda })
-        .then(resu => setGifs(resu))
-    }, [busqueda])
-
     
+    const {busqueda} = params    
+    const {gifs} = useGif({busqueda})
+
     if(gifs.length === 0) { return <h3>Cargando...</h3>}
 
     return (
