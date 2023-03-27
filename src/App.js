@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import ListOfGif from './Components/ListOfGif';
 import { Link, Route} from 'wouter'
 import Home from './Pages/Home/Home'
+import SearchResult from './Pages/PageSearch/SearchResults';
 
 
 
@@ -13,17 +13,19 @@ function App() {
     <div className="App">
       <section className="App-content">
       <header className='header'>
-
       <Link to='/'>IRomano App</Link>
-      <h3>La app de gif mas grande de pais</h3>
+      <div>
+      <button className='btn-login'>Login</button>  
+      <button className='btn-login'>Registrar</button>
+      </div>
       </header>
     
-      <section className='section-listado-gif'>
+      
       <Route
-        component={ListOfGif}
+        component={SearchResult}
         path="/search/:busqueda"
       />
-      </section>
+      
       <Route 
         component={Home}
         path="/"

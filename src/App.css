@@ -14,7 +14,7 @@
 
 .App-content {
   padding-top: 100px;
-  background-color: #282c34;
+  background-color: #2C3E50;
   min-height: 100vh;
   display: flex;
   flex-direction: column ;
@@ -29,25 +29,69 @@
 
 
 .header{
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #2527FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2C3E50;
+  border: 1px solid lightslategray;
 }
+
+.btn-login{
+  padding: 12px;
+  background-color: #2E86C1;
+  border-radius: 7px;
+  width: 100px;
+  margin: 0px 5px;
+  border: none;
+  color: white;
+}
+
+
+
+/* section Home */
+
+
+.section-home{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+
+  
+}
+
 
 /* form Home */
 
 .div-form{
     width: 100%;
     margin-bottom: 200px;
+
+  }
+
+
+  .form-busqueda input {
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    border: none;
+  }
+
+
+.form-busqueda input:nth-child(1) { 
+      border-radius: 10px 0px  0px 10px;
 }
 
 
-.form-busqueda input{ 
-      font-size: 20px;
-      padding: 5px;
+.form-busqueda input:nth-child(2) { 
+      border-radius: 0px 10px  10px 0px;
 }
 
 .section-listado-gif{
@@ -56,6 +100,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+
+
+.contenedor-gif-home{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 
@@ -91,4 +143,15 @@ a {
 
 a:hover{
    color: lightseagreen;
+}
+
+
+  /* contenedor gif */
+
+.contenedor-gif{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;  
+    justify-content: center;
 }

@@ -2,12 +2,12 @@ import Gif from "./Gif";
 import React from "react";
 import useGif from "../Hooks/useGif";
 
-export default function ListOfGif({ params }) {
+export default function ListOfGif({gifs}) {
     
-    const {busqueda} = params    
-    const {gifs} = useGif({busqueda})
+       
+    // const {gifs} = useGif({busqueda})
 
-    if(gifs.length === 0) { return <h3>Cargando...</h3>}
+    // if(gifs.length === 0) { return <h3>Cargando...</h3>}
 
     return (
         <>
