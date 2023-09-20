@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <section className="App-content">
       <header className='header'>
-      <Link to='/'>IRomano App</Link>
+      <Link to='/Home'>IRomano App</Link>
       <div>
       <button className='btn-login'>Login</button>  
       <button className='btn-login'>Registrar</button>
@@ -28,7 +28,7 @@ function App() {
       
       <Route 
         component={Home}
-        path="/"
+        path="/Home"
       />
         
 
